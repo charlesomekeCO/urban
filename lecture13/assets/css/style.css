@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Inter, Arial, cursive, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 1rem;
+    position: relative;
+    min-height: 100dvh;
+}
+
+header {
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    padding: .5rem 1rem;
+    inset: 0 auto auto 0;
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.home,
+.home div,
+header nav,
+header > div {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header nav div img {
+    width: 60px;
+    height: 60px;
+}
+
+header nav div h2 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: Cuprum, 'Courier New', Courier, monospace;
+}
+
+header nav ul {
+    gap: 10px;
+    display: flex;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: .9rem;
+}
+
+header > div {
+    gap: 5px;
+}
+
+header > div p,
+header > div a {
+    color: #fff;
+}
+
+.home {
+    padding: 6rem 0 2rem 1rem;
+    justify-content: space-between;
+}
+
+.home img {
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.home div {
+    gap: 10px;
+    color: #fff;
+}
+
+.home div h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.home div p {
+    width: 60%;
+}
+
+.home a {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background: #fff;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+
+.discover-details .discover-search {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.discover-details .discover-search span {
+    z-index: 1;
+    position: absolute;
+    inset: 10px auto auto 10px;
+}
+
+.discover-details .discover-search input {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: #272525;
+    font-size: 1.1rem;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: none;
+    }
+}
